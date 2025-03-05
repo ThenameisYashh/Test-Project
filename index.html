@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="hambuger.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <!-- Header Section  -->
+    <header>
+      <div><img class="hLogo" src="assets/lock-logo.png" alt="Company Logo" /></div>
+      <div class="hAllOptsWrrper">
+        <ul class="optsWrrper">
+          <a href="#"
+            ><li><p>EXPLORE</p></li></a
+          >
+          <a href="#"
+            ><li><p>OFFERS</p></li></a
+          >
+          <a href="#"
+            ><li><p>HISTORY</p></li></a
+          >
+          <a href="#"
+            ><li><p>LANGUAGE</p></li></a
+          >
+        </ul>
+        <button>CONNECT WALLET</button>
+      </div>
+      <div class="hamburgerwrppr" >
+        <div><img class="hamLogo" src="assets/logo_bt.png" alt=""></div>
+        <ul class="hamOptsWrrper">
+          <a href="#"
+            ><li><p>EXPLORE</p></li></a
+          >
+          <a href="#"
+            ><li><p>OFFERS</p></li></a
+          >
+          <a href="#"
+            ><li><p>HISTORY</p></li></a
+          >
+          <a href="#"
+            ><li><p>LANGUAGE</p></li></a
+          >
+        </ul>
+        <button>CONNECT WALLET</button>
+      </div>
+      <button
+        class="menu"
+        onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+        aria-label="Main Menu"
+      >
+        <svg width="79" height="79" viewBox="0 0 100 100" >
+          <path
+            class="line line1"
+            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+          />
+          <path class="line line2" d="M 20,50 H 80" />
+          <path
+            class="line line3"
+            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+          />
+        </svg>
+      </button>
+    </header>
+
+    <!-- Main Section  -->
+    <main>
+      <div class="searchWrrper">
+        <h1>Filters</h1>
+        <div class="searchBox">
+          <img src="assets/search.svg" alt="search icon" /><input
+            type="text"
+            placeholder="Search for articles.."
+          />
+        </div>
+        <div class="filterBox">
+          <input type="checkbox" />
+          <p>Show only whitelisted properties's offers</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="btnWrrpr">
+          <button>Sell</button>
+          <button>Buy</button>
+          <button>Exchange</button>
+        </div>
+        <div class="tWrrpr">
+          <table border="1">
+            <thead>
+              <tr>
+                <th>Offer ID</th>
+                <th>Offer Token</th>
+                <th>Buyer Token</th>
+                <th>Rate of Return</th>
+                <th>Offer Yield</th>
+                <th>% Difference</th>
+                <th>Official Price</th>
+                <th>Asked Price</th>
+                <th>% Difference</th>
+                <th>Stock</th>
+                <th>Cart</th>
+                <th>View</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>371</td>
+                <td>Token1</td>
+                <td>USDC</td>
+                <td>10%</td>
+                <td>12%</td>
+                <td>20%</td>
+                <td>$51.35</td>
+                <td>$60.00</td>
+                <td>16.85%</td>
+                <td>12.28</td>
+                <td>🛒</td>
+                <td>👁️</td>
+              </tr>
+              <tr>
+                <td>275</td>
+                <td>Token2</td>
+                <td>USDC</td>
+                <td>11%</td>
+                <td>11%</td>
+                <td>0%</td>
+                <td>$49.98</td>
+                <td>$61.00</td>
+                <td>22.05%</td>
+                <td>43</td>
+                <td>🛒</td>
+                <td>👁️</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer Section  -->
+    <footer>
+      <div><img class="fLogo" src="assets/logo_bt.png" alt="Company Logo" /></div>
+      <button>HELP</button>
+    </footer>
+  </body>
+</html>
